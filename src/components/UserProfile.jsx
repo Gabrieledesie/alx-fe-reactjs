@@ -1,13 +1,19 @@
 import React from 'react';
 
-function UserProfile(props) {
+const UserProfile = () => {
   return (
-    <div style={{ border: '1px solid gray', padding: '10px', margin: '10px', borderRadius: '5px', backgroundColor: '#f9f9f9' }}>
-      <h2 style={{ color: 'blue', fontSize: '1.5rem' }}>{props.name}</h2>
-      <p>Age: <span style={{ fontWeight: 'bold' }}>{props.age}</span></p>
-      <p>Bio: <span style={{ color: '#333' }}>{props.bio}</span></p>
+    <div style={{
+      border: '1px solid #ccc',
+      padding: '15px',
+      margin: '10px auto',
+      maxWidth: '600px',
+      borderRadius: '5px'
+    }}>
+      <h2 style={{ fontSize: '20px', color: '#444' }}>User Profile</h2>
+      <p style={{ margin: '5px 0', color: '#555' }}>Name: John Doe</p>
+      <p style={{ margin: '5px 0', color: '#555' }}>Email: john.doe@example.com</p>
     </div>
   );
-}
+};
 
 export default UserProfile;
