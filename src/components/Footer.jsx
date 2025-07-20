@@ -1,17 +1,10 @@
+// src/components/Footer.jsx
 import React from 'react';
 
 const Footer = () => {
   return (
-    <footer style={{
-      backgroundColor: '#333',
-      color: '#fff',
-      padding: '10px',
-      textAlign: 'center',
-      position: 'relative',
-      bottom: 0,
-      width: '100%'
-    }}>
-      <p style={{ margin: 0, fontSize: '14px' }}>© 2025 My App. All rights reserved.</p>
+    <footer style={{ backgroundColor: 'navy', color: 'white', textAlign: 'center', padding: '10px', marginTop: '20px' }}>
+      <p>&copy; 2025 My React App</p>
     </footer>
   );
 };

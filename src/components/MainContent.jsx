@@ -1,18 +1,12 @@
+// src/components/MainContent.jsx
 import React from 'react';
+import UserProfile from './UserProfile';
 
 const MainContent = () => {
   return (
-    <main style={{
-      minHeight: '300px',
-      padding: '20px',
-      backgroundColor: '#fff',
-      margin: '10px auto',
-      maxWidth: '800px'
-    }}>
-      <h2 style={{ fontSize: '22px', color: '#333' }}>Main Content</h2>
-      <p style={{ lineHeight: '1.6', color: '#666' }}>
-        This is the main content area of the application. Add your content here.
-      </p>
+    <main style={{ padding: '20px', backgroundColor: '#f9f9f9' }}>
+      <UserProfile name="Gabriel Edesie" age={25} bio="Aspiring Full-Stack Developer and AI Enthusiast" />
+      <UserProfile name="Ada Lovelace" age={28} bio="Mathematician and early computer programmer" />
     </main>
   );
 };

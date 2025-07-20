@@ -13,7 +13,21 @@ const App = () => {
       flexDirection: 'column'
     }}>
       <Header />
-      <UserProfile />
+
+      {/* ✅ Pass props to UserProfile */}
+      <UserProfile
+        name="Gabriel Edesie"
+        age={25}
+        bio="Aspiring Full-Stack Developer and AI Enthusiast"
+      />
+
+      {/* ✅ You can add another profile like this */}
+      <UserProfile
+        name="Ada Lovelace"
+        age={28}
+        bio="Mathematician and early computer programmer"
+      />
+
       <MainContent />
       <Footer />
     </div>
